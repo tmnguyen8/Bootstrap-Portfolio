@@ -36,23 +36,25 @@ body {
 
 /* main */
  .my-container {
-    padding-top: 30px;
+    padding-top: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
     border: 1px solid #dddddd;
     background-color: #ffffff;
-  
+   
 }
 .my-header {
-    padding-bottom: 20px;
+
     font-size: 30px;
     line-height: 49px;
     color: #4aaaa5;
     text-emphasis: bold;
     border-bottom: 3px solid #dddddd;
+
   }
 .my-content {
     margin-top: 30px;
+    padding: 10px;
 }
 
 /* footer */
@@ -70,8 +72,30 @@ footer {
   }
 
 /* Media Queries Medium devices (tablets, 768px and up) */
-@media (max-width: 640px) { 
-    .my-nav {
-        width: 100%;
+@media (min-width: 641px) { 
+    body {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
+
+.my-work-title {
+    background-color: #4aaaa5;
+    bottom: 50px;
+    text-align: center;
+    color:  #ffffff;
+}
+
+.work {
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+button[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+  }
