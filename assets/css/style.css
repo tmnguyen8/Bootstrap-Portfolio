@@ -7,11 +7,18 @@ body {
     line-height: 34px;
     color: #777777;
     background: url("../images/concrete_seamless.png");
+    width: 100%;
 }
 
 .my-nav {
     border-bottom: 2px solid #cccccc;
     background: #ffffff;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    right: 5%;
+    left: 5%;
+    z-index: 99;
 }
 
 .logo {
@@ -71,11 +78,21 @@ footer {
     height: 50px;
   }
 
-/* Media Queries Medium devices (tablets, 768px and up) */
+/* Media Queries Medium devices (tablets, 641px and up) */
 @media (min-width: 641px) { 
     body {
         padding-left: 50px;
         padding-right: 50px;
+    }
+}
+@media (min-width: 768px){
+    .port-img {
+        max-height: 300px;   
+    }
+}
+@media (min-width: 992px){
+    .port-img {
+        max-height: 500px;   
     }
 }
 
